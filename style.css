@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #888;
+}
+h2 {
+  font-weight: normal;
+  color: #888;
+}
+h3 {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #888;
+  margin-block: 10px;
+}
+
+.container {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  margin-block: 20px;
+}
+.card {
+  background-color: white;
+  box-shadow: 4px 4px 4px #ccc;
+}
+/* Left -box */
+
+.left-desc {
+  margin-inline: 20px;
+}
+.left {
+  flex-basis: 30%;
+  margin-inline: 10px;
+  /* border: 2px solid red; */
+}
+.img-box {
+  position: relative;
+}
+
+/* Image section */
+.img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius:10px ;
+}
+
+.img-box .user-name {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  color: #eee;
+}
+
+/* List items designing */
+
+ul {
+  margin-block: 20px;
+  list-style: none;
+}
+ul > li {
+  margin-top: 10px;
+}
+.icon-text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+hr {
+  /* margin-block: 10px; */
+  border: 0.5px solid#eee;
+}
+
+i {
+  color: teal;
+}
+
+/* skill Section and language section */
+.skills {
+  margin-block: 20px;
+}
+.progressbar {
+  background-color: grey;
+  border-radius: 15px;
+  margin-block: 10px;
+  /* padding-block: 2px; */
+}
+.progress {
+  background-color: teal;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 0.6rem;
+  padding-block: 2px;
+}
+
+.languages {
+  margin-block: 20px;
+}
+
+/* Right Box Items */
+.right {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* height: 100px; */
+  /* border: 2px solid red; */
+}
+
+.education {
+  height: 100%;
+}
+.p-desc {
+  color: #212121;
+  margin-block: 20px;
+  line-height: 1.5rem;
+}
+
+/* Image for college education 
+  .imgg{
+      /* margin-top: 15px; 
+      position: relative;
+      
+  }
+  .clgname{
+      /* position: relative; 
+      /* margin-top:15px ; 
+      display: inline-block;
+      /* background-color: aqua; 
+      position: absolute;
+      
+  }
+  */
+
+.card-content {
+  margin-inline: 20px;
+  margin-block: 20px;
+}
+
+/* date colors */
+.date {
+  color: teal;
+}
+
+.badge {
+  background-color: teal;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.6rem;
+}
+
+/* Jsut for Spaae */
+
+.space {
+  height: 50vh;
+}
+
+@media only screen and (min-width: 641px) {
+  .container {
+    width: 70%;
+    flex-direction: row;
+  }
+}
